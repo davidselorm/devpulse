@@ -1,32 +1,69 @@
-# React + TypeScript + Vite
+﻿# DevPulse ⚡
+> Autonomous Developer Telemetry, DORA Metrics & Engineering Health Dashboard.
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+![DevPulse Status](https://img.shields.io/badge/DORA_Status-Tier_1_Elite-10b981?style=for-the-badge)
+![React](https://img.shields.io/badge/React_19-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite_8-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 
-Currently, two official plugins are available:
+DevPulse is a high-performance, real-time developer productivity and engineering velocity dashboard designed for modern software teams. It provides continuous visibility into DORA delivery metrics, PR review throughput, CI pipeline bottlenecks, and commit velocity.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 Core Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **DORA Engineering Performance Metrics:**
+  - **Deployment Frequency**: Automated production release velocity tracker with sparkline trajectory.
+  - **Lead Time for Changes**: Median duration from commit initiation to production deployment.
+  - **Change Failure Rate**: Real-time rollback, hotfix, and incident regression tracking.
+  - **Mean Time to Restore (MTTR)**: Service outage recovery telemetry.
+- **Weekly Commit & PR Throughput Visualization**: Dual-bar velocity graph tracking merged PRs and commit activity.
+- **Active Pull Request Radar**: Live turnaround tracking, review statuses (`approved`, `in_review`, `changes_requested`), and CI/CD validation results.
+- **Real-Time Commit Activity Stream**: Instant stream of commits across repositories with interactive search and line diff stats.
+- **Service & Infrastructure Health Monitor**: Latency and uptime telemetry across ingestion gateways and CI pipelines.
 
-## Expanding the Oxlint configuration
+---
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+## 🛠️ Tech Stack
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+- **Framework**: React 19 + TypeScript
+- **Bundler**: Vite 8 with fast HMR
+- **Linter**: Oxlint
+- **Styling**: Cyber-Dark Developer Theme (Glassmorphism + CSS Custom Properties)
+
+---
+
+## 📦 Getting Started
+
+### Prerequisites
+- Node.js 20+
+- npm / pnpm / yarn
+
+### Installation & Local Run
+
+```bash
+# Clone the repository
+git clone https://github.com/davidselorm/devpulse.git
+cd devpulse
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+---
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/davidselorm/devpulse/issues).
+
+---
+
+## 📄 License
+
+MIT © 2026 [davidselorm](https://github.com/davidselorm)
